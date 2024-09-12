@@ -11,7 +11,12 @@ def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
     is_odd = None
-
+    if len(name) % 2 == 1:
+        is_odd = True
+    elif len(name) % 2 == 0:
+        is_odd = False
+    else:    
+        is_odd = None
     return is_odd
 
 def lab1Question3(input_string, input_number):
