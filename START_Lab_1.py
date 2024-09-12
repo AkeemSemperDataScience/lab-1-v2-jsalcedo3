@@ -25,7 +25,7 @@ def lab1Question3(input_string, input_number):
     character_at = -1
     str_len = len(input_string)
     if input_number <= str_len:
-        character_at = str(input_string[input_number])
+        character_at = input_string[input_number]
     else:
         character_at = -1
     return character_at
