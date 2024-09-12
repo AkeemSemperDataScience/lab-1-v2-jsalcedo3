@@ -34,8 +34,8 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
- #   myfile = open(file_name)
-    for numbers in file_name:
+    myfile = open(file_name)
+    for numbers in myfile:
         list_of_nums.append(numbers)
     return list_of_nums
 
