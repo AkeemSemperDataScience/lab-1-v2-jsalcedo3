@@ -24,7 +24,7 @@ def lab1Question3(input_string, input_number):
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
     character_at = -1
     strlength = len(input_string)
-    if input_number <= strlength:
+    if int(input_number) <= int(strlength):
         print(input_string[input_number])
     else:
         character_at = -1
