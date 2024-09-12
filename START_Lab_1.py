@@ -35,9 +35,8 @@ def lab1Question4(file_name):
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
  #   myfile = open(file_name)
-
- #   for list_of_nums in myfile:
- #       list_of_nums.append
+    for numbers in file_name:
+        list_of_nums.append(numbers)
     return list_of_nums
 
 def lab1Question5(list_numbers):
@@ -45,6 +44,7 @@ def lab1Question5(list_numbers):
     # Return the mode from that list. 
     mode_of_list = None
     mode_of_list = statistics.mode(list_numbers)
+
     return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
