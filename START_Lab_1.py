@@ -34,15 +34,17 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    f = open(file_name)
-    list_of_nums = f.readlines()
+ #   myfile = open(file_name)
+
+ #   for list_of_nums in myfile:
+ #       list_of_nums.append
     return list_of_nums
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
     mode_of_list = None
-
+    mode_of_list = statistics.mode(list_numbers)
     return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
@@ -50,6 +52,7 @@ def lab1Question6(quarters, dimes, nickels, pennies):
     # Return the total amount in dollars
     # For example, if the handful contains 4 quarters, 3 dimes, 2 nickels, and 1 penny, the function should return 1.41.
     total = None
+    total = (quarters * .25) + (dimes * .10) + (nickels * .05) + pennies
     return total
 
 ## Example of calling a function to test these... 
