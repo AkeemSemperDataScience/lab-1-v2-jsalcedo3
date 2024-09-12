@@ -24,10 +24,10 @@ def lab1Question3(input_string, input_number):
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
     character_at = -1
     strlength = len(input_string)
-    if int(input_number) <= int(strlength):
-        print(input_string[input_number])
-    else:
-        character_at = -1
+if input_number <= strlength:
+    character_at = (input_string[input_number])
+else:
+    character_at = -1
     return character_at
 
 def lab1Question4(file_name):
