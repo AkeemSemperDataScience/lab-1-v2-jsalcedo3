@@ -33,12 +33,13 @@ def lab1Question3(input_string, input_number):
 def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
+    import re
     list_of_nums = []
-    with open(file_name) as myfile:
+    with open(file_name, 'r') as myfile:
         content = myfile.read()
-        numbers = [int(num) for num in content]
-#    for numbers in myfile:
-#        list_of_nums.append(numbers)
+#        numbers = [int(num) for num in content]
+        list_of_nums = re.findall(r'-?\d+\.?\d*', content)
+        list_of_nums = [float(num) if '.' in num else int(num) for num in list_of_nums]
     return list_of_nums
 
 def lab1Question5(list_numbers):
