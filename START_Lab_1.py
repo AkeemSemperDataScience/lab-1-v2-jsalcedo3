@@ -13,10 +13,10 @@ def lab1Question2(name):
     is_odd = None
     if len(name) % 2 == 1:
         is_odd = True
-    elif len(name) % 2 == 0:
-        is_odd = False
-    else:    
+    elif len(name) == 0:
         is_odd = None
+    else:    
+        is_odd = False
     return is_odd
 
 def lab1Question3(input_string, input_number):
