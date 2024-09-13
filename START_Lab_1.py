@@ -34,16 +34,19 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    myfile = open(file_name)
-    for numbers in myfile:
-        list_of_nums.append(numbers)
+    with open(file_name) as myfile:
+        content = myfile.read()
+        numbers = [int(num) for num in content]
+#    for numbers in myfile:
+#        list_of_nums.append(numbers)
     return list_of_nums
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
+    from collections import Counter
     mode_of_list = None
-    mode_of_list = statistics.mode(list_numbers)
+    mode_of_list = Counter(list_numbers).most_common(1)[0][0]
 
     return mode_of_list
 
