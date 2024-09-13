@@ -39,7 +39,7 @@ def lab1Question4(file_name):
         content = myfile.read()
 #        numbers = [int(num) for num in content]
         list_of_nums = re.findall(r'-?\d+\.?\d*', content)
-        list_of_nums = [float(num) if '.' in num else int(num) for num in list_of_nums]
+#        list_of_nums = [float(num) if '.' in num else int(num) for num in list_of_nums]
     return list_of_nums
 
 def lab1Question5(list_numbers):
